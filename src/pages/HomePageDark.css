@@ -1,20 +1,17 @@
-/* HomePageLightOrange.css */
 
 .home-page-dark {
-  /* Main container */
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff; /* Light background color */
-  color: #333; /* Dark text color */
+  background-color: #fff; 
+  color: #333; 
   min-height: 100vh;
-  /* width: 100%; */
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .header-dark {
-  /* Ensure this targets your header */
   background-color: #fff;
   padding: 20px;
   display: flex; /* Enable flexbox for alignment */
@@ -25,13 +22,11 @@
 }
 
 .logo-dark {
-  /* Container for logo and name */
   display: flex; /* Align logo and name inline */
   align-items: center; /* Vertically align logo and name */
 }
 
 .logo-dark img {
-  /* Logo image */
   height: 40px;
   margin-right: 10px; /* Add some spacing between the logo and the name */
 }
