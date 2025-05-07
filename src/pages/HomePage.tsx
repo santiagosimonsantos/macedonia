@@ -1,7 +1,7 @@
-import React from 'react';
-import '../HomePageDark.css';
-import NavBar from '../components/NavBar'
-import { Link } from 'react-router-dom'
+import React from "react";
+import "../HomePageDark.css";
+import NavBar from "../components/NavBar";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   const featuredOffers = [
@@ -19,13 +19,13 @@ function HomePage() {
       imageUrl: "src/assets/flour.png",
       rating: 4.8,
       originalPrice: 15,
-      discountedPrice: 6.50,
+      discountedPrice: 6.5,
     },
-      ];
+  ];
 
   return (
     <div className="home-page-dark">
-      <NavBar /> 
+      <NavBar />
       <main className="main-content-dark">
         <section className="hero-dark">
           <div className="hero-text-dark">
@@ -34,7 +34,10 @@ function HomePage() {
             <button className="cta-button-dark">Browse Deals Now</button>
           </div>
           <div className="hero-image-dark">
-            <img src="src/assets/food_rescue.png" alt="Delicious food waiting to be rescued" />
+            <img
+              src="src/assets/food_rescue.png"
+              alt="Delicious food waiting to be rescued"
+            />
           </div>
         </section>
 
@@ -54,7 +57,9 @@ function HomePage() {
             <div className="step-dark">
               <span className="step-number-dark">3</span>
               <h3>Collect</h3>
-              <p>Visit the location at the indicated time and enjoy your food.</p>
+              <p>
+                Visit the location at the indicated time and enjoy your food.
+              </p>
             </div>
           </div>
         </section>
@@ -62,19 +67,27 @@ function HomePage() {
         <section className="featured-offers-dark">
           <h2>Featured Offers</h2>
           <div className="offer-list-dark">
-            {featuredOffers.map(offer => (
+            {featuredOffers.map((offer) => (
               <div key={offer.id} className="offer-card-dark">
                 <img src={offer.imageUrl} alt={offer.placeName} />
-                <div className="offer-details-dark"> 
+                <div className="offer-details-dark">
                   <h3>{offer.placeName}</h3>
                   <div className="offer-info-dark">
-                    <span className="rating-dark">Rating: {offer.rating} ★</span>
+                    <span className="rating-dark">
+                      Rating: {offer.rating} ★
+                    </span>
                   </div>
                   <div className="offer-pricing-dark">
-                    <p className="original-price-dark">Original Price: €{offer.originalPrice}</p>
-                    <p className="discounted-price-dark">Now: €{offer.discountedPrice}</p>
+                    <p className="original-price-dark">
+                      Original Price: €{offer.originalPrice}
+                    </p>
+                    <p className="discounted-price-dark">
+                      Now: €{offer.discountedPrice}
+                    </p>
                   </div>
-                  <Link to="/offer" className="view-offer-button-dark">View Offer</Link>
+                  <Link to="/offer" className="view-offer-button-dark">
+                    View Offer
+                  </Link>
                 </div>
               </div>
             ))}
@@ -83,7 +96,10 @@ function HomePage() {
 
         <section className="call-to-action-dark">
           <h2>Join the To Go To Go Community!</h2>
-          <p>Start saving food, saving money, and contributing to a more sustainable planet.</p>
+          <p>
+            Start saving food, saving money, and contributing to a more
+            sustainable planet.
+          </p>
           <button className="signup-button-dark">Sign Up Now</button>
         </section>
       </main>

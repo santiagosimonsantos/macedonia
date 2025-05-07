@@ -1,6 +1,6 @@
-import "../HomePageDark.css"
+import "../HomePageDark.css";
 import logo from "../assets/logo.svg";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (

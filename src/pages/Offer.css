@@ -1,7 +1,7 @@
 /* ModernOfferDetails.css */
 
 .modern-offer-details-page {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ff9800;
   /* color: #ff9800; */
   padding: 30px;
@@ -20,7 +20,9 @@
   cursor: pointer;
   font-size: 0.9em;
   font-weight: 500;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
