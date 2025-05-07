@@ -1,5 +1,7 @@
 import React from 'react';
-import './HomePageDark.css'; // Make sure you are using the correct CSS file
+import '../HomePageDark.css';
+import NavBar from '../components/NavBar'
+import { Link } from 'react-router-dom'
 
 function HomePage() {
   const featuredOffers = [
@@ -23,21 +25,7 @@ function HomePage() {
 
   return (
     <div className="home-page-dark">
-      <header className="header-dark">
-        <div className="logo-dark">
-          <img src="/src/assets/logo.svg" alt="To Go To Go Logo" />
-          <h1>Food rescuers</h1>
-        </div>
-        <nav className="navigation-dark">
-          <ul>
-            <li><a href="/explore">Explore</a></li>
-            <li><a href="/favorites">Favorites</a></li>
-            <li><a href="/orders">My Orders</a></li>
-            <li><a href="/account">My Account</a></li>
-          </ul>
-        </nav>
-      </header>
-
+      <NavBar /> 
       <main className="main-content-dark">
         <section className="hero-dark">
           <div className="hero-text-dark">
@@ -77,7 +65,7 @@ function HomePage() {
             {featuredOffers.map(offer => (
               <div key={offer.id} className="offer-card-dark">
                 <img src={offer.imageUrl} alt={offer.placeName} />
-                <div className="offer-details-dark">
+                <div className="offer-details-dark"> 
                   <h3>{offer.placeName}</h3>
                   <div className="offer-info-dark">
                     <span className="rating-dark">Rating: {offer.rating} ★</span>
@@ -86,7 +74,7 @@ function HomePage() {
                     <p className="original-price-dark">Original Price: €{offer.originalPrice}</p>
                     <p className="discounted-price-dark">Now: €{offer.discountedPrice}</p>
                   </div>
-                  <button className="view-offer-button-dark">View Offer</button>
+                  <Link to="/offer" className="view-offer-button-dark">View Offer</Link>
                 </div>
               </div>
             ))}
