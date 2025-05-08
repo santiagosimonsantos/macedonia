@@ -1,4 +1,3 @@
-import React from "react";
 import "../HomePageDark.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";

@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./ExplorePage.css";
 import NavBar from "../components/NavBar";

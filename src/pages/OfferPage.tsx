@@ -1,4 +1,3 @@
-import React from "react";
 import "./OfferPage.css";
 import "../HomePageDark.css";
 import { useNavigate } from "react-router-dom";
@@ -26,7 +25,7 @@ function OfferPage() {
   const userLatitude = 52.3702;
   const userLongitude = 4.8952;
 
-  const calculateDistance = (lat1, lon1, lat2, lon2) => {
+  const calculateDistance = (lat1: number, lon1: number, lat2: number, lon2: number) => {
     const R = 6371;
     const dLat = deg2rad(lat2 - lat1);
     const dLon = deg2rad(lon2 - lon1);
@@ -41,7 +40,7 @@ function OfferPage() {
     return distance.toFixed(2);
   };
 
-  const deg2rad = (deg) => {
+  const deg2rad = (deg: number) => {
     return deg * (Math.PI / 180);
   };
 
