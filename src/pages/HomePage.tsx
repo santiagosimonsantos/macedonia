@@ -2,13 +2,16 @@ import "../HomePageDark.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import eggs from "../assets/eggs.png";
+import flour from "../assets/flour.png";
+import food_rescue from "../assets/food_rescue.png";
 
 function HomePage() {
   const featuredOffers = [
     {
       id: 1,
       placeName: "Eggs",
-      imageUrl: "src/assets/eggs.png",
+      imageUrl: eggs,
       rating: 4.5,
       originalPrice: 10,
       discountedPrice: 4.99,
@@ -16,7 +19,7 @@ function HomePage() {
     {
       id: 2,
       placeName: "Flour",
-      imageUrl: "src/assets/flour.png",
+      imageUrl: flour,
       rating: 4.8,
       originalPrice: 15,
       discountedPrice: 6.5,
@@ -34,10 +37,7 @@ function HomePage() {
             <button className="cta-button-dark">Browse Deals Now</button>
           </div>
           <div className="hero-image-dark">
-            <img
-              src="src/assets/food_rescue.png"
-              alt="Delicious food waiting to be rescued"
-            />
+            <img src={food_rescue} alt="Delicious food waiting to be rescued" />
           </div>
         </section>
 

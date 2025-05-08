@@ -2,12 +2,18 @@ import { Link } from "react-router-dom";
 import "./ExplorePage.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import eggs from "../assets/eggs.png";
+import flour from "../assets/flour.png";
+import beef from "../assets/beef.png";
+import tomato from "../assets/tomato.png";
+import lettuce from "../assets/lettuce.png";
+import peppers from "../assets/peppers.png";
 
 function ExplorePage() {
   const offers = [
     {
       id: 1,
-      imageUrl: "/src/assets/eggs.png",
+      imageUrl: eggs,
       placeName: "Eggs",
       rating: 4.5,
       originalPrice: 10,
@@ -15,7 +21,7 @@ function ExplorePage() {
     },
     {
       id: 2,
-      imageUrl: "/src/assets/flour.png",
+      imageUrl: flour,
       placeName: "Flour",
       rating: 4.8,
       originalPrice: 15,
@@ -23,7 +29,7 @@ function ExplorePage() {
     },
     {
       id: 3,
-      imageUrl: "/src/assets/beef.png",
+      imageUrl: beef,
       placeName: "Beef",
       rating: 4.2,
       originalPrice: 12,
@@ -31,7 +37,7 @@ function ExplorePage() {
     },
     {
       id: 4,
-      imageUrl: "/src/assets/tomato.png",
+      imageUrl: tomato,
       placeName: "Tomato",
       rating: 4.9,
       originalPrice: 14,
@@ -39,7 +45,7 @@ function ExplorePage() {
     },
     {
       id: 5,
-      imageUrl: "/src/assets/lettuce.png",
+      imageUrl: lettuce,
       placeName: "Lettuce",
       rating: 4.6,
       originalPrice: 8,
@@ -47,7 +53,7 @@ function ExplorePage() {
     },
     {
       id: 6,
-      imageUrl: "/src/assets/peppers.png",
+      imageUrl: peppers,
       placeName: "Peppers",
       rating: 4.7,
       originalPrice: 16,

@@ -4,13 +4,14 @@ import { useNavigate } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import back_arrow from "../assets/back_arrow.svg";
+import eggs from "../assets/eggs.png";
 
 function OfferPage() {
   const navigate = useNavigate();
 
   const offer = {
     id: 123,
-    imageUrl: "/src/assets/eggs.png",
+    imageUrl: eggs,
     title: "Eggs",
     uploaderUsername: "FoodSaver123",
     latitude: 52.3667,
@@ -25,7 +26,12 @@ function OfferPage() {
   const userLatitude = 52.3702;
   const userLongitude = 4.8952;
 
-  const calculateDistance = (lat1: number, lon1: number, lat2: number, lon2: number) => {
+  const calculateDistance = (
+    lat1: number,
+    lon1: number,
+    lat2: number,
+    lon2: number,
+  ) => {
     const R = 6371;
     const dLat = deg2rad(lat2 - lat1);
     const dLon = deg2rad(lon2 - lon1);
