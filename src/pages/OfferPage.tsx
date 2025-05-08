@@ -1,12 +1,12 @@
 import React from "react";
-import "./Offer.css";
+import "./OfferPage.css";
 import "../HomePageDark.css";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../components/NavBar";
-import Footer from "../components/Footer"
-import back_arrow from "../assets/back_arrow.svg"
+import Footer from "../components/Footer";
+import back_arrow from "../assets/back_arrow.svg";
 
-function OfferDetailsPage() {
+function OfferPage() {
   const navigate = useNavigate();
 
   const offer = {
@@ -64,8 +64,8 @@ function OfferDetailsPage() {
       <NavBar />
       <div className="modern-offer-details-page">
         <button className="modern-go-back-button" onClick={handleGoBack}>
-        <img className="back-icon" src={back_arrow}  />  
-        Back
+          <img className="back-icon" src={back_arrow} />
+          Back
         </button>
         <div className="modern-offer-container">
           <div className="modern-offer-image">
@@ -122,4 +122,4 @@ function OfferDetailsPage() {
   );
 }
 
-export default OfferDetailsPage;
+export default OfferPage;

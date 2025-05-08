@@ -1,4 +1,4 @@
-import "../HomePageDark.css";
+import "./NavBar.css";
 import logo from "../assets/logo.svg";
 import { Link } from "react-router-dom";
 
@@ -7,12 +7,12 @@ function NavBar() {
     <header className="header-dark">
       <Link to="/" className="logo-dark">
         <img src={logo} alt="To Go To Go Logo" />
-        <h1>Food rescuers</h1>
+        <h1>Food Rescuers</h1>
       </Link>
       <nav className="navigation-dark">
         <ul>
           <li>
-            <a href="">Explore</a>
+            <a href="/explore">Explore</a>
           </li>
           <li>
             <a href="/">Favorites</a>

@@ -1,7 +1,7 @@
 import React from "react";
 import "../HomePageDark.css";
 import NavBar from "../components/NavBar";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 function HomePage() {
@@ -75,7 +75,7 @@ function HomePage() {
                   <h3>{offer.placeName}</h3>
                   <div className="offer-info-dark">
                     <span className="rating-dark">
-                      Rating: {offer.rating} ★
+                      User rating : {offer.rating} ★
                     </span>
                   </div>
                   <div className="offer-pricing-dark">
