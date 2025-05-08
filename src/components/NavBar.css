@@ -40,13 +40,13 @@
   margin-left: 20px;
 }
 
-.navigation-dark a {
+.navigation-dark .link {
   text-decoration: none;
   color: #555;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-.navigation-dark a:hover {
+.navigation-dark .link:hover {
   color: #ff8c00;
 }
