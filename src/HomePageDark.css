@@ -1,50 +1,47 @@
-/* HomePageLightOrange.css */
-
 .home-page-dark {
-  /* Main container */
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff; /* Light background color */
-  color: #333; /* Dark text color */
+  padding-top: 80px;
+  background-color: #fff;
+  color: #333;
   min-height: 100vh;
-  /* width: 100%; */
   display: flex;
   flex-direction: column;
 }
 
 .header-dark {
-  /* Ensure this targets your header */
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: #fff;
   padding: 20px;
-  display: flex; /* Enable flexbox for alignment */
+  display: flex;
   justify-content: space-between;
-  align-items: center; /* Vertically align items in the center */
+  align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .logo-dark {
-  /* Container for logo and name */
-  display: flex; /* Align logo and name inline */
-  align-items: center; /* Vertically align logo and name */
+  display: flex;
+  align-items: center;
 }
 
 .logo-dark img {
-  /* Logo image */
   height: 40px;
-  margin-right: 10px; /* Add some spacing between the logo and the name */
+  margin-right: 10px;
 }
 
 .logo-dark h1 {
-  /* Logo name */
-  margin: 0; /* Remove default margins from the h1 */
-  font-size: 1.5em; /* Adjust the font size as needed */
-  color: #ff9800; /* Or your desired color for the name */
+  margin: 0;
+  font-size: 1.5em;
+  color: #ff9800;
 }
 
 .navigation-dark ul {
-  /* Navigation list */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -52,12 +49,10 @@
 }
 
 .navigation-dark li {
-  /* Navigation item */
   margin-left: 20px;
 }
 
 .navigation-dark a {
-  /* Navigation link */
   text-decoration: none;
   color: #555;
   font-weight: bold;
@@ -65,20 +60,16 @@
 }
 
 .navigation-dark a:hover {
-  /* Navigation link hover */
-  color: #ff8c00; /* Darker orange on hover */
+  color: #ff8c00;
 }
 
 .main-content-dark {
-  /* Main content */
   padding: 20px;
   flex-grow: 1;
-  width: 100%;
 }
 
 .hero-dark {
-  /* Hero section */
-  background-color: #ffe0b2; /* Light orange background for hero */
+  background-color: #ffe0b2;
   padding: 40px;
   display: flex;
   justify-content: space-around;
@@ -90,28 +81,24 @@
 }
 
 .hero-text-dark {
-  /* Hero text container */
   max-width: 500px;
 }
 
 .hero-text-dark h1 {
-  /* Hero heading */
-  color: #ff9800; /* Main orange color for heading */
+  color: #ff9800;
   font-size: 2.5em;
   margin-bottom: 10px;
 }
 
 .hero-text-dark p {
-  /* Hero paragraph */
   font-size: 1.1em;
   color: #444;
   margin-bottom: 20px;
 }
 
 .cta-button-dark {
-  /* Call to action button */
-  background-color: #ff9800; /* Main orange color for button */
-  color: #fff; /* White text on orange */
+  background-color: #ff9800;
+  color: #fff;
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
@@ -122,33 +109,28 @@
 }
 
 .cta-button-dark:hover {
-  /* Call to action button hover */
-  background-color: #f57c00; /* Darker orange on hover */
+  background-color: #f57c00;
 }
 
 .hero-image-dark img {
-  /* Hero image */
   max-width: 300px;
   height: auto;
   border-radius: 8px;
 }
 
 .how-it-works-dark {
-  /* How it works section */
   padding: 20px 0;
   width: 100%;
   box-sizing: border-box;
 }
 
 .how-it-works-dark h2 {
-  /* How it works heading */
-  color: #ff9800; /* Main orange color for heading */
+  color: #ff9800;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .steps-dark {
-  /* Steps container */
   display: flex;
   justify-content: space-around;
   gap: 20px;
@@ -156,18 +138,16 @@
 }
 
 .step-dark {
-  /* Individual step */
-  background-color: #fff8e1; /* Very light orange for steps */
+  background-color: #fff8e1;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
   flex: 1;
-  border: 1px solid #ffcc80; /* Light orange border */
+  border: 1px solid #ffcc80;
 }
 
 .step-number-dark {
-  /* Step number */
-  background-color: #ff9800; /* Main orange for number */
+  background-color: #ff9800;
   color: #fff;
   border-radius: 50%;
   width: 30px;
@@ -180,26 +160,22 @@
 }
 
 .step-dark h3 {
-  /* Step heading */
   color: #555;
   margin-bottom: 10px;
 }
 
 .step-dark p {
-  /* Step paragraph */
   color: #666;
 }
 
 .featured-offers-dark {
-  /* Featured offers section */
   padding: 20px 0;
   width: 100%;
   box-sizing: border-box;
 }
 
 .featured-offers-dark h2 {
-  /* Featured offers heading */
-  color: #ff9800; /* Main orange for heading */
+  color: #ff9800;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -210,14 +186,14 @@
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   border: 1px solid #ffe0b2;
-  display: flex; /* Make offer card a flex container */
-  flex-direction: column; /* Stack image and details vertically */
+  display: flex;
+  flex-direction: column;
 }
 
 .offer-card-dark img {
   width: 100%;
   height: auto;
-  max-height: 150px; /* Adjust as needed */
+  max-height: 150px;
   object-fit: cover;
 }
 
@@ -241,7 +217,7 @@
 }
 
 .rating-dark {
-  color: #ffc107; /* Yellow/gold color for the star */
+  color: #ffc107;
   margin-right: 5px;
 }
 
@@ -270,28 +246,23 @@
   cursor: pointer;
   font-size: 1em;
   transition: background-color 0.3s ease;
-  width: 100%; /* Make the button take full width of the details */
-  box-sizing: border-box; /* Include padding in the width */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .view-offer-button-dark:hover {
   background-color: #ffb347;
 }
 
-/* Adjust the offer list to potentially have more columns */
 .offer-list-dark {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(250px, 1fr)
-  ); /* Adjust minmax as needed */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 0 20px;
 }
 
 .call-to-action-dark {
-  /* Call to action section */
-  background-color: #ffe0b2; /* Light orange background */
+  background-color: #ffe0b2;
   padding: 40px 20px;
   text-align: center;
   border-radius: 8px;
@@ -301,21 +272,18 @@
 }
 
 .call-to-action-dark h2 {
-  /* Call to action heading */
-  color: #ff9800; /* Main orange for heading */
+  color: #ff9800;
   margin-bottom: 15px;
 }
 
 .call-to-action-dark p {
-  /* Call to action paragraph */
   color: #444;
   font-size: 1.1em;
   margin-bottom: 20px;
 }
 
 .signup-button-dark {
-  /* Sign up button */
-  background-color: #ff9800; /* Main orange for button */
+  background-color: #ff9800;
   color: #fff;
   padding: 15px 30px;
   border: none;
@@ -327,35 +295,30 @@
 }
 
 .signup-button-dark:hover {
-  /* Sign up button hover */
-  background-color: #f57c00; /* Darker orange on hover */
+  background-color: #f57c00;
 }
 
 .footer-dark {
-  /* Footer */
-  background-color: #fff3e0; /* Very light orange for footer */
+  background-color: #fff3e0;
   color: #555;
   padding: 20px;
   text-align: center;
   width: 100%;
   box-sizing: border-box;
-  border-top: 1px solid #ffcc80; /* Light orange border top */
+  border-top: 1px solid #ffcc80;
 }
 
 .footer-content-dark {
-  /* Footer content */
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .footer-logo-dark img {
-  /* Footer logo */
   height: 30px;
   margin-bottom: 10px;
 }
 
 .footer-navigation-dark ul {
-  /* Footer navigation list */
   list-style: none;
   padding: 0;
   margin: 10px 0;
@@ -364,24 +327,20 @@
 }
 
 .footer-navigation-dark li {
-  /* Footer navigation item */
   margin: 0 15px;
 }
 
 .footer-navigation-dark a {
-  /* Footer navigation link */
   text-decoration: none;
   color: #666;
   transition: color 0.3s ease;
 }
 
 .footer-navigation-dark a:hover {
-  /* Footer navigation link hover */
-  color: #ff8c00; /* Darker orange on hover */
+  color: #ff8c00;
 }
 
 .copyright-dark {
-  /* Copyright text */
   font-size: 0.9em;
   margin-top: 15px;
 }

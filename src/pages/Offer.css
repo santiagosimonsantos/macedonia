@@ -1,41 +1,39 @@
-/* ModernOfferDetails.css */
-
 .modern-offer-details-page {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ff9800;
-  /* color: #ff9800; */
   padding: 30px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 
 .modern-go-back-button {
-  background-color: #fff3e0; /* Very light orange */
-  color: #ff9800; /* Main orange */
-  border: 1px solid #ffcc80; /* Light orange border */
+  background-color: #fff3e0;
+  color: #ff9800;
+  border: 1px solid #ffcc80;
   padding: 10px 15px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 0.9em;
+  font-size: 1.2em;
   font-weight: 500;
   transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
+  background-color 0.3s ease,
+  color 0.3s ease;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
 
 .modern-go-back-button:hover {
-  background-color: #ffe0b2; /* Slightly darker light orange */
-  color: #f57c00; /* Darker orange */
+  background-color: #ffe0b2;
+  color: #f57c00;
 }
 
 .back-icon {
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
+  color: #f57c00;
   margin-right: 8px;
 }
 
@@ -71,7 +69,7 @@
 }
 
 .modern-offer-title {
-  color: #ff9800; /* Main orange */
+  color: #ff9800;
   font-size: 2.2em;
   margin-top: 0;
   margin-bottom: 5px;
@@ -114,13 +112,13 @@
 }
 
 .modern-discounted-price {
-  color: #ff7043; /* A brighter orange */
+  color: #ff7043;
   font-size: 1.4em;
   font-weight: 600;
 }
 
 .modern-reserve-button {
-  background-color: #ff9800; /* Main orange */
+  background-color: #ff9800;
   color: #fff;
   border: none;
   padding: 12px 20px;
@@ -133,12 +131,12 @@
 }
 
 .modern-reserve-button:hover {
-  background-color: #f57c00; /* Darker orange */
+  background-color: #f57c00;
 }
 
 .modern-additional-info {
-  background-color: #fff8e1; /* Very light orange */
-  border: 1px solid #ffecb3; /* Light orange border */
+  background-color: #fff8e1;
+  border: 1px solid #ffecb3;
   border-radius: 8px;
   padding: 20px;
   margin-top: 30px;
@@ -147,7 +145,7 @@
 }
 
 .modern-additional-title {
-  color: #ff9800; /* Main orange */
+  color: #ff9800;
   font-size: 1.4em;
   margin-top: 0;
   margin-bottom: 10px;

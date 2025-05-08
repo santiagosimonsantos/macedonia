@@ -15,13 +15,13 @@ function NavBar() {
             <a href="">Explore</a>
           </li>
           <li>
-            <a href="/favorites">Favorites</a>
+            <a href="/">Favorites</a>
           </li>
           <li>
-            <a href="/orders">My Orders</a>
+            <a href="/">My Orders</a>
           </li>
           <li>
-            <a href="/account">My Account</a>
+            <a href="/">My Account</a>
           </li>
         </ul>
       </nav>

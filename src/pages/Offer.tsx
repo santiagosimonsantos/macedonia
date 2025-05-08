@@ -3,6 +3,8 @@ import "./Offer.css";
 import "../HomePageDark.css";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer"
+import back_arrow from "../assets/back_arrow.svg"
 
 function OfferDetailsPage() {
   const navigate = useNavigate();
@@ -10,16 +12,14 @@ function OfferDetailsPage() {
   const offer = {
     id: 123,
     imageUrl: "/src/assets/eggs.png",
-    title: "Delicious Pizza Deal!",
-    placeName: "Pizza Paradise",
+    title: "Eggs",
     uploaderUsername: "FoodSaver123",
     latitude: 52.3667,
     longitude: 4.9,
     address: "Main Street 10, Amsterdam",
-    description:
-      "Get a large pepperoni pizza for a special discounted price! Limited time offer.",
-    originalPrice: 18.5,
-    discountedPrice: 9.99,
+    description: "Get ecological eggs",
+    originalPrice: 10,
+    discountedPrice: 4.99,
     additionalInfo: "Available for pickup only between 6 PM and 8 PM.",
   };
 
@@ -63,22 +63,16 @@ function OfferDetailsPage() {
     <div className="home-page-dark">
       <NavBar />
       <div className="modern-offer-details-page">
+        <button className="modern-go-back-button" onClick={handleGoBack}>
+        <img className="back-icon" src={back_arrow}  />  
+        Back
+        </button>
         <div className="modern-offer-container">
           <div className="modern-offer-image">
             <img src={offer.imageUrl} alt={offer.title} />
           </div>
           <div className="modern-offer-info">
             <h1 className="modern-offer-title">{offer.title}</h1>
-            <p className="modern-offer-place">
-              <svg viewBox="0 0 24 24" fill="currentColor" className="icon">
-                <path
-                  fillRule="evenodd"
-                  d="M11.54 22.351l.095-.03.095.03a.75.75 0 01-.69.69h-.21l-.095-.03-.095.03a.75.75 0 01-.769-.029l-.094-.031a.75.75 0 01-.142-.095c-.016-.022-.03-.046-.042-.071l-.022-.071a.75.75 0 01.016-.169l.058-.139a.75.75 0 01.142-.123l.122-.104a.75.75 0 01.14-.078l.151-.048a.75.75 0 01.129-.003l.151.026a.75.75 0 01.148.053l.122.071a.75.75 0 01.142.123l.058.139a.75.75 0 01.03.062l.042.071a.75.75 0 01.016.169l-.058.139a.75.75 0 01-.142.123l-.122.104a.75.75 0 01-.14.078l-.151.048a.75.75 0 01-.129.003l-.151-.026a.75.75 0 01-.148-.053l-.122-.071a.75.75 0 01-.142-.123l-.058-.139a.75.75 0 01-.03-.062zM12 14a1 1 0 100-2 1 1 0 000 2z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              {offer.placeName}
-            </p>
             <p className="modern-offer-uploader">
               <svg viewBox="0 0 24 24" fill="currentColor" className="icon">
                 <path d="M19 7c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5zm-6 12h2c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1h-2c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm-3-3v-2c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm6-9c-2.27 0-4.18 1.81-4.56 4h9.11c-.38-2.19-2.29-4-4.55-4z" />
@@ -123,6 +117,7 @@ function OfferDetailsPage() {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 }
