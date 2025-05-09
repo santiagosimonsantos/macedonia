@@ -5,11 +5,6 @@ import '../HomePageDark.css'
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
-
-interface AuthError {
-  message: string;
-}
-
 function SignupPage() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
