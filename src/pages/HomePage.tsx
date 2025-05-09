@@ -95,7 +95,7 @@ function HomePage() {
         </section>
 
         <section className="call-to-action-dark">
-          <h2>Join the Food Rescuers</h2>
+          <h2>Join the Food Rescuers community</h2>
           <p>
             Start saving food, saving money, and contributing to a more
             sustainable planet.
