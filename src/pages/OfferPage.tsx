@@ -112,7 +112,9 @@ function OfferPage() {
                 €{offer.discountedPrice}
               </span>
             </div>
-            <Link to="/login" className="modern-reserve-button">Reserve Now</Link>
+            <Link to="/login" className="modern-reserve-button">
+              Reserve Now
+            </Link>
           </div>
         </div>
         {offer.additionalInfo && (

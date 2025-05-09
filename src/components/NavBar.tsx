@@ -12,16 +12,24 @@ function NavBar() {
       <nav className="navigation-dark">
         <ul>
           <li>
-            <Link to="/explore" className="link">Explore</Link>
+            <Link to="/explore" className="link">
+              Explore
+            </Link>
           </li>
           <li>
-            <Link to="/" className="link">Favorites</Link>
+            <Link to="/" className="link">
+              Favorites
+            </Link>
           </li>
           <li>
-            <Link to="/" className="link">My Orders</Link>
+            <Link to="/" className="link">
+              My Orders
+            </Link>
           </li>
           <li>
-            <Link to="/login" className="link">My Account</Link>
+            <Link to="/login" className="link">
+              My Account
+            </Link>
           </li>
         </ul>
       </nav>

@@ -8,8 +8,8 @@ import {
 import HomePage from "./pages/HomePage";
 import OfferPage from "./pages/OfferPage";
 import ExplorePage from "./pages/ExplorePage";
-import LoginPage from "./pages/LoginPage"
-import SignupPage from "./pages/SignupPage.tsx"
+import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage.tsx";
 
 function ScrollToTop() {
   const { pathname } = useLocation();

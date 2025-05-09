@@ -34,7 +34,9 @@ function HomePage() {
           <div className="hero-text-dark">
             <h1>Save Delicious Food and Money!</h1>
             <p>Discover incredible deals from your neighbours.</p>
-            <button className="cta-button-dark">Browse Deals Now</button>
+            <Link to="/explore" className="cta-button-dark">
+              Browse Deals Now
+            </Link>
           </div>
           <div className="hero-image-dark">
             <img src={food_rescue} alt="Delicious food waiting to be rescued" />
@@ -100,7 +102,9 @@ function HomePage() {
             Start saving food, saving money, and contributing to a more
             sustainable planet.
           </p>
-          <button className="signup-button-dark">Sign Up Now</button>
+          <Link to="/signup" className="signup-button-dark">
+            Sign Up Now
+          </Link>
         </section>
       </main>
       <Footer />
