@@ -1,6 +1,6 @@
 import "./OfferPage.css";
 import "../HomePageDark.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import back_arrow from "../assets/back_arrow.svg";
@@ -112,7 +112,7 @@ function OfferPage() {
                 €{offer.discountedPrice}
               </span>
             </div>
-            <button className="modern-reserve-button">Reserve Now</button>
+            <Link to="/login" className="modern-reserve-button">Reserve Now</Link>
           </div>
         </div>
         {offer.additionalInfo && (

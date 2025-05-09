@@ -21,7 +21,7 @@ function NavBar() {
             <Link to="/" className="link">My Orders</Link>
           </li>
           <li>
-            <Link to="/" className="link">My Account</Link>
+            <Link to="/login" className="link">My Account</Link>
           </li>
         </ul>
       </nav>
